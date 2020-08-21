@@ -1,0 +1,1396 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E605BC9924E2BA0C0063241A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605BC9824E2BA0C0063241A /* AppDelegate.swift */; };
+		E605BC9B24E2BA0C0063241A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605BC9A24E2BA0C0063241A /* SceneDelegate.swift */; };
+		E605BCA524E2BA100063241A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E605BCA324E2BA100063241A /* LaunchScreen.storyboard */; };
+		E605BCB024E2BA100063241A /* LightChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605BCAF24E2BA100063241A /* LightChatTests.swift */; };
+		E605BCBB24E2BA100063241A /* LightChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605BCBA24E2BA100063241A /* LightChatUITests.swift */; };
+		E605BCD624E2BA420063241A /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E605BCCD24E2BA420063241A /* Domain.framework */; };
+		E605BCDD24E2BA420063241A /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605BCDC24E2BA420063241A /* DomainTests.swift */; };
+		E605BCDF24E2BA420063241A /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = E605BCCF24E2BA420063241A /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E605BCE224E2BA420063241A /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E605BCCD24E2BA420063241A /* Domain.framework */; };
+		E605BCF924E2BA4D0063241A /* MainStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E605BCF024E2BA4D0063241A /* MainStorage.framework */; };
+		E605BD0024E2BA4D0063241A /* MainStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605BCFF24E2BA4D0063241A /* MainStorageTests.swift */; };
+		E605BD0224E2BA4D0063241A /* MainStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = E605BCF224E2BA4D0063241A /* MainStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E605BD0524E2BA4D0063241A /* MainStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E605BCF024E2BA4D0063241A /* MainStorage.framework */; };
+		E605BD3324E2BA8D0063241A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E605BD2924E2BA8C0063241A /* Images.xcassets */; };
+		E605BD3B24E2BAC70063241A /* Builders.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605BD3A24E2BAC70063241A /* Builders.swift */; };
+		E605BD3D24E2BB210063241A /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E605BCCD24E2BA420063241A /* Domain.framework */; };
+		E605BD4724E2D7980063241A /* AuthConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605BD4324E2D7980063241A /* AuthConfigurator.swift */; };
+		E605BD4824E2D7980063241A /* AuthNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605BD4424E2D7980063241A /* AuthNavigator.swift */; };
+		E605BD4924E2D7980063241A /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605BD4524E2D7980063241A /* AuthViewController.swift */; };
+		E605BD4A24E2D7980063241A /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605BD4624E2D7980063241A /* AuthPresenter.swift */; };
+		E605BD4C24E2D7EB0063241A /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E605BD4B24E2D7EB0063241A /* Auth.storyboard */; };
+		E605BD5A24E2D84D0063241A /* CommonError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605BD4E24E2D84D0063241A /* CommonError.swift */; };
+		E605BD5B24E2D84D0063241A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605BD4F24E2D84D0063241A /* User.swift */; };
+		E605BD5C24E2D84D0063241A /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605BD5124E2D84D0063241A /* UserRepository.swift */; };
+		E605BD5D24E2D84D0063241A /* BuilderContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605BD5324E2D84D0063241A /* BuilderContainer.swift */; };
+		E605BD5E24E2D84D0063241A /* AuthUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605BD5524E2D84D0063241A /* AuthUseCase.swift */; };
+		E605BD5F24E2D84D0063241A /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605BD5724E2D84D0063241A /* Authenticator.swift */; };
+		E605BD6024E2D84D0063241A /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605BD5824E2D84D0063241A /* UseCaseProvider.swift */; };
+		E605BD6124E2D84D0063241A /* FieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605BD5924E2D84D0063241A /* FieldValidator.swift */; };
+		E605BD6624E2D8600063241A /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605BD6324E2D8600063241A /* UserRepository.swift */; };
+		E605BD6724E2D8600063241A /* Buiilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605BD6524E2D8600063241A /* Buiilder.swift */; };
+		E605BD7224E2EE510063241A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E605BD7124E2EE510063241A /* Colors.xcassets */; };
+		E605BD7A24E2F7D60063241A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605BD7924E2F7D60063241A /* Colors.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E605BCAC24E2BA100063241A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E605BC8D24E2BA0C0063241A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E605BC9424E2BA0C0063241A;
+			remoteInfo = LightChat;
+		};
+		E605BCB724E2BA100063241A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E605BC8D24E2BA0C0063241A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E605BC9424E2BA0C0063241A;
+			remoteInfo = LightChat;
+		};
+		E605BCD724E2BA420063241A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E605BC8D24E2BA0C0063241A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E605BCCC24E2BA420063241A;
+			remoteInfo = Domain;
+		};
+		E605BCD924E2BA420063241A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E605BC8D24E2BA0C0063241A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E605BC9424E2BA0C0063241A;
+			remoteInfo = LightChat;
+		};
+		E605BCE024E2BA420063241A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E605BC8D24E2BA0C0063241A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E605BCCC24E2BA420063241A;
+			remoteInfo = Domain;
+		};
+		E605BCFA24E2BA4D0063241A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E605BC8D24E2BA0C0063241A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E605BCEF24E2BA4D0063241A;
+			remoteInfo = MainStorage;
+		};
+		E605BCFC24E2BA4D0063241A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E605BC8D24E2BA0C0063241A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E605BC9424E2BA0C0063241A;
+			remoteInfo = LightChat;
+		};
+		E605BD0324E2BA4D0063241A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E605BC8D24E2BA0C0063241A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E605BCEF24E2BA4D0063241A;
+			remoteInfo = MainStorage;
+		};
+		E605BD3F24E2BB210063241A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E605BC8D24E2BA0C0063241A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E605BCCC24E2BA420063241A;
+			remoteInfo = Domain;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E605BC9524E2BA0C0063241A /* LightChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E605BC9824E2BA0C0063241A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E605BC9A24E2BA0C0063241A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E605BCA424E2BA100063241A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E605BCA624E2BA100063241A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E605BCAB24E2BA100063241A /* LightChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E605BCAF24E2BA100063241A /* LightChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightChatTests.swift; sourceTree = "<group>"; };
+		E605BCB124E2BA100063241A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E605BCB624E2BA100063241A /* LightChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E605BCBA24E2BA100063241A /* LightChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightChatUITests.swift; sourceTree = "<group>"; };
+		E605BCBC24E2BA100063241A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E605BCCD24E2BA420063241A /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E605BCCF24E2BA420063241A /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
+		E605BCD024E2BA420063241A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E605BCD524E2BA420063241A /* DomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E605BCDC24E2BA420063241A /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
+		E605BCDE24E2BA420063241A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E605BCF024E2BA4D0063241A /* MainStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MainStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E605BCF224E2BA4D0063241A /* MainStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainStorage.h; sourceTree = "<group>"; };
+		E605BCF324E2BA4D0063241A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E605BCF824E2BA4D0063241A /* MainStorageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainStorageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E605BCFF24E2BA4D0063241A /* MainStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStorageTests.swift; sourceTree = "<group>"; };
+		E605BD0124E2BA4D0063241A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E605BD2924E2BA8C0063241A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../LightChat/LightChat/Resources/Images.xcassets; sourceTree = "<group>"; };
+		E605BD3A24E2BAC70063241A /* Builders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builders.swift; sourceTree = "<group>"; };
+		E605BD4324E2D7980063241A /* AuthConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthConfigurator.swift; path = LightChat/Scenes/Main/AuthConfigurator.swift; sourceTree = SOURCE_ROOT; };
+		E605BD4424E2D7980063241A /* AuthNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthNavigator.swift; path = LightChat/Scenes/Main/AuthNavigator.swift; sourceTree = SOURCE_ROOT; };
+		E605BD4524E2D7980063241A /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthViewController.swift; path = LightChat/Scenes/Main/AuthViewController.swift; sourceTree = SOURCE_ROOT; };
+		E605BD4624E2D7980063241A /* AuthPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthPresenter.swift; path = LightChat/Scenes/Main/AuthPresenter.swift; sourceTree = SOURCE_ROOT; };
+		E605BD4B24E2D7EB0063241A /* Auth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Auth.storyboard; path = LightChat/Resources/IB/Auth.storyboard; sourceTree = SOURCE_ROOT; };
+		E605BD4E24E2D84D0063241A /* CommonError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonError.swift; sourceTree = "<group>"; };
+		E605BD4F24E2D84D0063241A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E605BD5124E2D84D0063241A /* UserRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		E605BD5324E2D84D0063241A /* BuilderContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuilderContainer.swift; sourceTree = "<group>"; };
+		E605BD5524E2D84D0063241A /* AuthUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthUseCase.swift; sourceTree = "<group>"; };
+		E605BD5724E2D84D0063241A /* Authenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
+		E605BD5824E2D84D0063241A /* UseCaseProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseProvider.swift; sourceTree = "<group>"; };
+		E605BD5924E2D84D0063241A /* FieldValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldValidator.swift; sourceTree = "<group>"; };
+		E605BD6324E2D8600063241A /* UserRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		E605BD6524E2D8600063241A /* Buiilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buiilder.swift; sourceTree = "<group>"; };
+		E605BD7124E2EE510063241A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		E605BD7924E2F7D60063241A /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Colors.swift; path = Generated/Colors.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E605BC9224E2BA0C0063241A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E605BCE224E2BA420063241A /* Domain.framework in Frameworks */,
+				E605BD0524E2BA4D0063241A /* MainStorage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E605BCA824E2BA100063241A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E605BCB324E2BA100063241A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E605BCCA24E2BA420063241A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E605BCD224E2BA420063241A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E605BCD624E2BA420063241A /* Domain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E605BCED24E2BA4D0063241A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E605BD3D24E2BB210063241A /* Domain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E605BCF524E2BA4D0063241A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E605BCF924E2BA4D0063241A /* MainStorage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E605BC8C24E2BA0C0063241A = {
+			isa = PBXGroup;
+			children = (
+				E605BC9724E2BA0C0063241A /* LightChat */,
+				E605BCAE24E2BA100063241A /* LightChatTests */,
+				E605BCB924E2BA100063241A /* LightChatUITests */,
+				E605BCCE24E2BA420063241A /* Domain */,
+				E605BCDB24E2BA420063241A /* DomainTests */,
+				E605BCF124E2BA4D0063241A /* MainStorage */,
+				E605BCFE24E2BA4D0063241A /* MainStorageTests */,
+				E605BC9624E2BA0C0063241A /* Products */,
+				E605BD3C24E2BB210063241A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E605BC9624E2BA0C0063241A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E605BC9524E2BA0C0063241A /* LightChat.app */,
+				E605BCAB24E2BA100063241A /* LightChatTests.xctest */,
+				E605BCB624E2BA100063241A /* LightChatUITests.xctest */,
+				E605BCCD24E2BA420063241A /* Domain.framework */,
+				E605BCD524E2BA420063241A /* DomainTests.xctest */,
+				E605BCF024E2BA4D0063241A /* MainStorage.framework */,
+				E605BCF824E2BA4D0063241A /* MainStorageTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E605BC9724E2BA0C0063241A /* LightChat */ = {
+			isa = PBXGroup;
+			children = (
+				E605BD2D24E2BA8D0063241A /* Scenes */,
+				E605BD2824E2BA8C0063241A /* Resources */,
+				E605BD3924E2BA9C0063241A /* Supporting Files */,
+			);
+			path = LightChat;
+			sourceTree = "<group>";
+		};
+		E605BCAE24E2BA100063241A /* LightChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				E605BCAF24E2BA100063241A /* LightChatTests.swift */,
+				E605BCB124E2BA100063241A /* Info.plist */,
+			);
+			path = LightChatTests;
+			sourceTree = "<group>";
+		};
+		E605BCB924E2BA100063241A /* LightChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E605BCBA24E2BA100063241A /* LightChatUITests.swift */,
+				E605BCBC24E2BA100063241A /* Info.plist */,
+			);
+			path = LightChatUITests;
+			sourceTree = "<group>";
+		};
+		E605BCCE24E2BA420063241A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				E605BD4D24E2D84D0063241A /* Entities */,
+				E605BD5024E2D84D0063241A /* Repository */,
+				E605BD5224E2D84D0063241A /* Supporting Files */,
+				E605BD5424E2D84D0063241A /* UseCases */,
+				E605BD5624E2D84D0063241A /* Workers */,
+				E605BCCF24E2BA420063241A /* Domain.h */,
+				E605BCD024E2BA420063241A /* Info.plist */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		E605BCDB24E2BA420063241A /* DomainTests */ = {
+			isa = PBXGroup;
+			children = (
+				E605BCDC24E2BA420063241A /* DomainTests.swift */,
+				E605BCDE24E2BA420063241A /* Info.plist */,
+			);
+			path = DomainTests;
+			sourceTree = "<group>";
+		};
+		E605BCF124E2BA4D0063241A /* MainStorage */ = {
+			isa = PBXGroup;
+			children = (
+				E605BD6224E2D8600063241A /* Repositories */,
+				E605BD6424E2D8600063241A /* Supporting Files */,
+				E605BCF224E2BA4D0063241A /* MainStorage.h */,
+				E605BCF324E2BA4D0063241A /* Info.plist */,
+			);
+			path = MainStorage;
+			sourceTree = "<group>";
+		};
+		E605BCFE24E2BA4D0063241A /* MainStorageTests */ = {
+			isa = PBXGroup;
+			children = (
+				E605BCFF24E2BA4D0063241A /* MainStorageTests.swift */,
+				E605BD0124E2BA4D0063241A /* Info.plist */,
+			);
+			path = MainStorageTests;
+			sourceTree = "<group>";
+		};
+		E605BD2824E2BA8C0063241A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E605BD2924E2BA8C0063241A /* Images.xcassets */,
+				E605BD7124E2EE510063241A /* Colors.xcassets */,
+				E605BD2A24E2BA8C0063241A /* IB */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E605BD2A24E2BA8C0063241A /* IB */ = {
+			isa = PBXGroup;
+			children = (
+				E605BD4B24E2D7EB0063241A /* Auth.storyboard */,
+			);
+			path = IB;
+			sourceTree = "<group>";
+		};
+		E605BD2D24E2BA8D0063241A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E605BD2E24E2BA8D0063241A /* Main */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E605BD2E24E2BA8D0063241A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E605BD4324E2D7980063241A /* AuthConfigurator.swift */,
+				E605BD4424E2D7980063241A /* AuthNavigator.swift */,
+				E605BD4624E2D7980063241A /* AuthPresenter.swift */,
+				E605BD4524E2D7980063241A /* AuthViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E605BD3924E2BA9C0063241A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E605BD7824E2F7C10063241A /* Generated */,
+				E605BC9824E2BA0C0063241A /* AppDelegate.swift */,
+				E605BC9A24E2BA0C0063241A /* SceneDelegate.swift */,
+				E605BCA324E2BA100063241A /* LaunchScreen.storyboard */,
+				E605BCA624E2BA100063241A /* Info.plist */,
+				E605BD3A24E2BAC70063241A /* Builders.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E605BD3C24E2BB210063241A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E605BD4D24E2D84D0063241A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E605BD4E24E2D84D0063241A /* CommonError.swift */,
+				E605BD4F24E2D84D0063241A /* User.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E605BD5024E2D84D0063241A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				E605BD5124E2D84D0063241A /* UserRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		E605BD5224E2D84D0063241A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E605BD5324E2D84D0063241A /* BuilderContainer.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E605BD5424E2D84D0063241A /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				E605BD5524E2D84D0063241A /* AuthUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		E605BD5624E2D84D0063241A /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				E605BD5724E2D84D0063241A /* Authenticator.swift */,
+				E605BD5824E2D84D0063241A /* UseCaseProvider.swift */,
+				E605BD5924E2D84D0063241A /* FieldValidator.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		E605BD6224E2D8600063241A /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				E605BD6324E2D8600063241A /* UserRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		E605BD6424E2D8600063241A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E605BD6524E2D8600063241A /* Buiilder.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E605BD7824E2F7C10063241A /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				E605BD7924E2F7D60063241A /* Colors.swift */,
+			);
+			name = Generated;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E605BCC824E2BA420063241A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E605BCDF24E2BA420063241A /* Domain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E605BCEB24E2BA4D0063241A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E605BD0224E2BA4D0063241A /* MainStorage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E605BC9424E2BA0C0063241A /* LightChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E605BCBF24E2BA100063241A /* Build configuration list for PBXNativeTarget "LightChat" */;
+			buildPhases = (
+				E605BD6C24E2ED770063241A /* Generate Colors */,
+				E605BD4224E2BC160063241A /* SwiftLint */,
+				E605BC9124E2BA0C0063241A /* Sources */,
+				E605BC9224E2BA0C0063241A /* Frameworks */,
+				E605BC9324E2BA0C0063241A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E605BCE124E2BA420063241A /* PBXTargetDependency */,
+				E605BD0424E2BA4D0063241A /* PBXTargetDependency */,
+			);
+			name = LightChat;
+			productName = LightChat;
+			productReference = E605BC9524E2BA0C0063241A /* LightChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E605BCAA24E2BA100063241A /* LightChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E605BCC224E2BA100063241A /* Build configuration list for PBXNativeTarget "LightChatTests" */;
+			buildPhases = (
+				E605BCA724E2BA100063241A /* Sources */,
+				E605BCA824E2BA100063241A /* Frameworks */,
+				E605BCA924E2BA100063241A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E605BCAD24E2BA100063241A /* PBXTargetDependency */,
+			);
+			name = LightChatTests;
+			productName = LightChatTests;
+			productReference = E605BCAB24E2BA100063241A /* LightChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E605BCB524E2BA100063241A /* LightChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E605BCC524E2BA100063241A /* Build configuration list for PBXNativeTarget "LightChatUITests" */;
+			buildPhases = (
+				E605BCB224E2BA100063241A /* Sources */,
+				E605BCB324E2BA100063241A /* Frameworks */,
+				E605BCB424E2BA100063241A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E605BCB824E2BA100063241A /* PBXTargetDependency */,
+			);
+			name = LightChatUITests;
+			productName = LightChatUITests;
+			productReference = E605BCB624E2BA100063241A /* LightChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E605BCCC24E2BA420063241A /* Domain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E605BCE424E2BA420063241A /* Build configuration list for PBXNativeTarget "Domain" */;
+			buildPhases = (
+				E605BCC824E2BA420063241A /* Headers */,
+				E605BCC924E2BA420063241A /* Sources */,
+				E605BCCA24E2BA420063241A /* Frameworks */,
+				E605BCCB24E2BA420063241A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Domain;
+			productName = Domain;
+			productReference = E605BCCD24E2BA420063241A /* Domain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E605BCD424E2BA420063241A /* DomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E605BCE824E2BA420063241A /* Build configuration list for PBXNativeTarget "DomainTests" */;
+			buildPhases = (
+				E605BCD124E2BA420063241A /* Sources */,
+				E605BCD224E2BA420063241A /* Frameworks */,
+				E605BCD324E2BA420063241A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E605BCD824E2BA420063241A /* PBXTargetDependency */,
+				E605BCDA24E2BA420063241A /* PBXTargetDependency */,
+			);
+			name = DomainTests;
+			productName = DomainTests;
+			productReference = E605BCD524E2BA420063241A /* DomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E605BCEF24E2BA4D0063241A /* MainStorage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E605BD0724E2BA4D0063241A /* Build configuration list for PBXNativeTarget "MainStorage" */;
+			buildPhases = (
+				E605BCEB24E2BA4D0063241A /* Headers */,
+				E605BCEC24E2BA4D0063241A /* Sources */,
+				E605BCED24E2BA4D0063241A /* Frameworks */,
+				E605BCEE24E2BA4D0063241A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E605BD4024E2BB210063241A /* PBXTargetDependency */,
+			);
+			name = MainStorage;
+			productName = MainStorage;
+			productReference = E605BCF024E2BA4D0063241A /* MainStorage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E605BCF724E2BA4D0063241A /* MainStorageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E605BD0A24E2BA4D0063241A /* Build configuration list for PBXNativeTarget "MainStorageTests" */;
+			buildPhases = (
+				E605BCF424E2BA4D0063241A /* Sources */,
+				E605BCF524E2BA4D0063241A /* Frameworks */,
+				E605BCF624E2BA4D0063241A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E605BCFB24E2BA4D0063241A /* PBXTargetDependency */,
+				E605BCFD24E2BA4D0063241A /* PBXTargetDependency */,
+			);
+			name = MainStorageTests;
+			productName = MainStorageTests;
+			productReference = E605BCF824E2BA4D0063241A /* MainStorageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E605BC8D24E2BA0C0063241A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = None;
+				TargetAttributes = {
+					E605BC9424E2BA0C0063241A = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					E605BCAA24E2BA100063241A = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = E605BC9424E2BA0C0063241A;
+					};
+					E605BCB524E2BA100063241A = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = E605BC9424E2BA0C0063241A;
+					};
+					E605BCCC24E2BA420063241A = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					E605BCD424E2BA420063241A = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = E605BC9424E2BA0C0063241A;
+					};
+					E605BCEF24E2BA4D0063241A = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					E605BCF724E2BA4D0063241A = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = E605BC9424E2BA0C0063241A;
+					};
+				};
+			};
+			buildConfigurationList = E605BC9024E2BA0C0063241A /* Build configuration list for PBXProject "LightChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E605BC8C24E2BA0C0063241A;
+			productRefGroup = E605BC9624E2BA0C0063241A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E605BC9424E2BA0C0063241A /* LightChat */,
+				E605BCAA24E2BA100063241A /* LightChatTests */,
+				E605BCB524E2BA100063241A /* LightChatUITests */,
+				E605BCCC24E2BA420063241A /* Domain */,
+				E605BCD424E2BA420063241A /* DomainTests */,
+				E605BCEF24E2BA4D0063241A /* MainStorage */,
+				E605BCF724E2BA4D0063241A /* MainStorageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E605BC9324E2BA0C0063241A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E605BD4C24E2D7EB0063241A /* Auth.storyboard in Resources */,
+				E605BD7224E2EE510063241A /* Colors.xcassets in Resources */,
+				E605BCA524E2BA100063241A /* LaunchScreen.storyboard in Resources */,
+				E605BD3324E2BA8D0063241A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E605BCA924E2BA100063241A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E605BCB424E2BA100063241A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E605BCCB24E2BA420063241A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E605BCD324E2BA420063241A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E605BCEE24E2BA4D0063241A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E605BCF624E2BA4D0063241A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E605BD4224E2BC160063241A /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		E605BD6C24E2ED770063241A /* Generate Colors */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Colors";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mkdir ${PROJECT_DIR}/${PROJECT_NAME}/Supporting\\ Files/Generated\n${PROJECT_DIR}/utils/ColorAssetExporter ${PROJECT_DIR}/${PROJECT_NAME}/Resources/Colors.xcassets ${PROJECT_DIR}/${PROJECT_NAME}/Supporting\\ Files/Generated\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E605BC9124E2BA0C0063241A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E605BD3B24E2BAC70063241A /* Builders.swift in Sources */,
+				E605BD7A24E2F7D60063241A /* Colors.swift in Sources */,
+				E605BD4A24E2D7980063241A /* AuthPresenter.swift in Sources */,
+				E605BC9924E2BA0C0063241A /* AppDelegate.swift in Sources */,
+				E605BD4724E2D7980063241A /* AuthConfigurator.swift in Sources */,
+				E605BD4824E2D7980063241A /* AuthNavigator.swift in Sources */,
+				E605BD4924E2D7980063241A /* AuthViewController.swift in Sources */,
+				E605BC9B24E2BA0C0063241A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E605BCA724E2BA100063241A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E605BCB024E2BA100063241A /* LightChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E605BCB224E2BA100063241A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E605BCBB24E2BA100063241A /* LightChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E605BCC924E2BA420063241A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E605BD5B24E2D84D0063241A /* User.swift in Sources */,
+				E605BD6124E2D84D0063241A /* FieldValidator.swift in Sources */,
+				E605BD5A24E2D84D0063241A /* CommonError.swift in Sources */,
+				E605BD5C24E2D84D0063241A /* UserRepository.swift in Sources */,
+				E605BD5E24E2D84D0063241A /* AuthUseCase.swift in Sources */,
+				E605BD5D24E2D84D0063241A /* BuilderContainer.swift in Sources */,
+				E605BD5F24E2D84D0063241A /* Authenticator.swift in Sources */,
+				E605BD6024E2D84D0063241A /* UseCaseProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E605BCD124E2BA420063241A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E605BCDD24E2BA420063241A /* DomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E605BCEC24E2BA4D0063241A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E605BD6624E2D8600063241A /* UserRepository.swift in Sources */,
+				E605BD6724E2D8600063241A /* Buiilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E605BCF424E2BA4D0063241A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E605BD0024E2BA4D0063241A /* MainStorageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E605BCAD24E2BA100063241A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E605BC9424E2BA0C0063241A /* LightChat */;
+			targetProxy = E605BCAC24E2BA100063241A /* PBXContainerItemProxy */;
+		};
+		E605BCB824E2BA100063241A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E605BC9424E2BA0C0063241A /* LightChat */;
+			targetProxy = E605BCB724E2BA100063241A /* PBXContainerItemProxy */;
+		};
+		E605BCD824E2BA420063241A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E605BCCC24E2BA420063241A /* Domain */;
+			targetProxy = E605BCD724E2BA420063241A /* PBXContainerItemProxy */;
+		};
+		E605BCDA24E2BA420063241A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E605BC9424E2BA0C0063241A /* LightChat */;
+			targetProxy = E605BCD924E2BA420063241A /* PBXContainerItemProxy */;
+		};
+		E605BCE124E2BA420063241A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E605BCCC24E2BA420063241A /* Domain */;
+			targetProxy = E605BCE024E2BA420063241A /* PBXContainerItemProxy */;
+		};
+		E605BCFB24E2BA4D0063241A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E605BCEF24E2BA4D0063241A /* MainStorage */;
+			targetProxy = E605BCFA24E2BA4D0063241A /* PBXContainerItemProxy */;
+		};
+		E605BCFD24E2BA4D0063241A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E605BC9424E2BA0C0063241A /* LightChat */;
+			targetProxy = E605BCFC24E2BA4D0063241A /* PBXContainerItemProxy */;
+		};
+		E605BD0424E2BA4D0063241A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E605BCEF24E2BA4D0063241A /* MainStorage */;
+			targetProxy = E605BD0324E2BA4D0063241A /* PBXContainerItemProxy */;
+		};
+		E605BD4024E2BB210063241A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E605BCCC24E2BA420063241A /* Domain */;
+			targetProxy = E605BD3F24E2BB210063241A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E605BCA324E2BA100063241A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E605BCA424E2BA100063241A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E605BCBD24E2BA100063241A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E605BCBE24E2BA100063241A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E605BCC024E2BA100063241A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = AE9M9ZU9P8;
+				INFOPLIST_FILE = "LightChat/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.rpgmaker.lightchat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Dev ru.rpgmaker.lightchat";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E605BCC124E2BA100063241A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = AE9M9ZU9P8;
+				INFOPLIST_FILE = "LightChat/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.rpgmaker.lightchat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc ru.rpgmaker.lightchat";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E605BCC324E2BA100063241A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NWAXZVJAA5;
+				INFOPLIST_FILE = LightChatTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omega-r.LightChatTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LightChat.app/LightChat";
+			};
+			name = Debug;
+		};
+		E605BCC424E2BA100063241A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NWAXZVJAA5;
+				INFOPLIST_FILE = LightChatTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omega-r.LightChatTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LightChat.app/LightChat";
+			};
+			name = Release;
+		};
+		E605BCC624E2BA100063241A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NWAXZVJAA5;
+				INFOPLIST_FILE = LightChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omega-r.LightChatUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LightChat;
+			};
+			name = Debug;
+		};
+		E605BCC724E2BA100063241A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NWAXZVJAA5;
+				INFOPLIST_FILE = LightChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omega-r.LightChatUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LightChat;
+			};
+			name = Release;
+		};
+		E605BCE524E2BA420063241A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NWAXZVJAA5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omega-r.Domain";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E605BCE624E2BA420063241A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NWAXZVJAA5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omega-r.Domain";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E605BCE924E2BA420063241A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NWAXZVJAA5;
+				INFOPLIST_FILE = DomainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omega-r.DomainTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LightChat.app/LightChat";
+			};
+			name = Debug;
+		};
+		E605BCEA24E2BA420063241A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NWAXZVJAA5;
+				INFOPLIST_FILE = DomainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omega-r.DomainTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LightChat.app/LightChat";
+			};
+			name = Release;
+		};
+		E605BD0824E2BA4D0063241A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NWAXZVJAA5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MainStorage/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omega-r.MainStorage";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E605BD0924E2BA4D0063241A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NWAXZVJAA5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MainStorage/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omega-r.MainStorage";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E605BD0B24E2BA4D0063241A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NWAXZVJAA5;
+				INFOPLIST_FILE = MainStorageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omega-r.MainStorageTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LightChat.app/LightChat";
+			};
+			name = Debug;
+		};
+		E605BD0C24E2BA4D0063241A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NWAXZVJAA5;
+				INFOPLIST_FILE = MainStorageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omega-r.MainStorageTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LightChat.app/LightChat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E605BC9024E2BA0C0063241A /* Build configuration list for PBXProject "LightChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E605BCBD24E2BA100063241A /* Debug */,
+				E605BCBE24E2BA100063241A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E605BCBF24E2BA100063241A /* Build configuration list for PBXNativeTarget "LightChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E605BCC024E2BA100063241A /* Debug */,
+				E605BCC124E2BA100063241A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E605BCC224E2BA100063241A /* Build configuration list for PBXNativeTarget "LightChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E605BCC324E2BA100063241A /* Debug */,
+				E605BCC424E2BA100063241A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E605BCC524E2BA100063241A /* Build configuration list for PBXNativeTarget "LightChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E605BCC624E2BA100063241A /* Debug */,
+				E605BCC724E2BA100063241A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E605BCE424E2BA420063241A /* Build configuration list for PBXNativeTarget "Domain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E605BCE524E2BA420063241A /* Debug */,
+				E605BCE624E2BA420063241A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E605BCE824E2BA420063241A /* Build configuration list for PBXNativeTarget "DomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E605BCE924E2BA420063241A /* Debug */,
+				E605BCEA24E2BA420063241A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E605BD0724E2BA4D0063241A /* Build configuration list for PBXNativeTarget "MainStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E605BD0824E2BA4D0063241A /* Debug */,
+				E605BD0924E2BA4D0063241A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E605BD0A24E2BA4D0063241A /* Build configuration list for PBXNativeTarget "MainStorageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E605BD0B24E2BA4D0063241A /* Debug */,
+				E605BD0C24E2BA4D0063241A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E605BC8D24E2BA0C0063241A /* Project object */;
+}
